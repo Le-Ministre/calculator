@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATRICE APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contaire">
+        <div class="title">
+           
+            <div class="togal">
+                <h3>Calculator</h3>
+               <div class="right">
+                <p id="un">1</p>
+                <p id="deux">2</p>
+                <p id="trois">3</p>
+               </div>
+            </div>
+           <div class="control">
+            <p>Theme</p>
+            <div class="box">
+                <div id="cercle"></div>
+            </div>
+            
+           </div>
+        </div>
+        <div class="screen">
+            <form name="calc">
+            <input type="text" name="calc" readonly id="screen">
+            </form>
+        </div>
+        <div class="cal-body">
+            <div class="btn">
+                <button class="num" onclick="number('7')">7</button>
+                <button class="num" onclick="number('8')">8</button>
+                <button class="num" onclick="number('9')">9</button>
+                <button class="del" onclick="del()">DEL</button>
+                <button class="num" onclick="number('4')">4</button>
+                <button class="num" onclick="number('5')">5</button>
+                <button class="num" onclick="number('6')">6</button>
+                <button onclick="signe('+')">+</button>
+                <button class="num" onclick="number('1')">1</button>
+                <button class="num" onclick="number('2')">2</button>
+                <button class="num" onclick="number('3')">3</button>
+                <button onclick="signe('-')">-</button>
+                <button onclick="signe('.')">.</button>
+                <button class="num" onclick="number('0')">0</button>
+                <button onclick="signe('/')">/</button>
+                <button onclick="signe('*')">X</button>
+                <button class="reset" onclick="reset()">RESET</button>
+                <button class="egal" onclick="egal()">=</button>
+               
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
